@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Elena Ksirova](https://up.htmlacademy.ru/htmlcss/18/user/393189).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Загорный](https://htmlacademy.ru/profile/id452233).
 
 ---
 
