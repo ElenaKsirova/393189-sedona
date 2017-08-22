@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: regular;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #000000;
+  }
+
+.main-title {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  }
+
+.feature-header {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #ffffff;
+}
