@@ -2,28 +2,34 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
     <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
+      <div class="main-navigation-wrapper">
+       <div class="container">
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
-          <li class="header-logo">
-            <a href="./index.html" class="main-header-logo">
-              <img src="img/main-logo.png" width="138" height="70" alt="Логотип Седоны">
-            </a>
-          </li>
           <li><a href="map.html">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
+        <div class="header-logo">
+          <a href="./index.html" class="main-header-logo">
+            <img src="img/main-logo.png" width="138" height="70" alt="Логотип Седоны">
+          </a>
+        </div>
+       </div>
+      </div>
       </nav>
     </header>
     <main class="container">
       <div class="main-image">
-        <img src="img/intro.jpg" alt="Виды Седоны" width="1200" height="780">
+        <img src="img/intro.jpg" alt="Виды Седоны" width="1200" height="625">
       </div>
       <section class="main-title">
         <h2 class="main-title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -124,9 +130,6 @@
       <section class="map-static">
         <h2 class="visually-hidden">Карта Седоны</h2>
         <img src="img/map.jpg" alt="Карта Седоны">
-      </section>
-      <section class="map">
-        <iframe src="#"></iframe>
       </section>
     </main>
     <footer class="footer">

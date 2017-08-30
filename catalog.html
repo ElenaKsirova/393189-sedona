@@ -2,8 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
     <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -12,11 +14,13 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li class="active"><a href="hotels.html">Гостиницы</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
-        <a class="main-header-logo" href="#">
-          <img src="img/main-logo.png" width="138" height="70" alt="Логотип Седоны">
-        </a>
+        <div class="header-logo">
+          <a href="./index.html" class="main-header-logo">
+            <img src="img/main-logo.png" width="138" height="70" alt="Логотип Седоны">
+          </a>
+        </div>
       </nav>
     </header>
     <main>
@@ -63,18 +67,24 @@
               <h2 class="visually-hidden">Цены на отели</h2>
               <div class="price-option">
                 <label class="min-price">
-                  От <input type="text" name="min-price" value="0">
+                  <input type="text" name="min-price" value="От 0">
                 </label>
                 <label class="max-price">
-                  До <input type="text" name="max-price" value="3000">
+                  <input type="text" name="max-price" value="До 3000">
                 </label>
               </div>
               <div class="range-option">
-                <div class="range-toddler range-toggle-min"></div>
-                <div class="range-toddler range-toggle-max"></div>
+                <div class="scale"><div class="bar"></div>
+                </div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
               </div>
 
-              <!--
+              <!--<div class="range-controls">
+
+                <div class="" style="left:40px;"></div>
+                <div class="toggle max-toggle" style="left:180px;"></div>
+            </div>
                 здесь переделывать
                   -->
               <button class="filter-button button" type="submit">Показать</button>
@@ -89,11 +99,11 @@
         </li>
         <li class="hotel-search-item">Сортировка:</li>
         <li class="hotel-search-item">
-        <a class="hotel-search-link hotel-search-link-active" href=#>По цене</a></li>
+        <a class="hotel-search-link hotel-search-link-active" href="#">По цене</a></li>
         <li class="hotel-search-item">
-        <a class="hotel-search-link" href=#>По типу</a></li>
+        <a class="hotel-search-link" href="#">По типу</a></li>
         <li class="hotel-search-item">
-        <a class="hotel-search-link" href=#>По рейтингу</a></li>
+        <a class="hotel-search-link" href="#">По рейтингу</a></li>
 
         <!-- нужно сделать треугольные стрелочки вниз-вверх результатов поиска -->
       </ul>
