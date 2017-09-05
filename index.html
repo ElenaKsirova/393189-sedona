@@ -3,15 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="container">
       <nav class="main-navigation">
-      <div class="main-navigation-wrapper">
-       <div class="container">
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
@@ -23,8 +22,6 @@
             <img src="img/main-logo.png" width="138" height="70" alt="Логотип Седоны">
           </a>
         </div>
-       </div>
-      </div>
       </nav>
     </header>
     <main class="container">
@@ -32,123 +29,138 @@
         <img src="img/intro.jpg" alt="Виды Седоны" width="1200" height="625">
       </div>
       <section class="main-title">
-        <h2 class="main-title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="main-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <h2 class="main-title-caption">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="main-title-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
       <section class="features">
-        <div class="feature-item blue-back">
-          <h2 class="feature-header">Настоящий городок</h2>
-          <div class="feature-number">&mdash; №1 &mdash;</div>
-          <p class="feature-text">Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
-        </div>
-        <div class="feature-image feature-right-image">
-          <img src="img/feature-1.jpg" alt="Настоящий городок" width="800" height="256">
+        <div class="feature-container">
+          <div class="feature-item blue-back">
+            <h2 class="feature-header">Настоящий городок</h2>
+            <div class="feature-number">&mdash; №1 &mdash;</div>
+            <p class="feature-text">Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="feature-image feature-right-image">
+            <img src="img/feature-1.jpg" alt="Настоящий городок" width="800" height="256">
+          </div>
         </div>
         <section class="advice-section">
           <h2 class="visually-hidden">О Седоне</h2>
           <ul class="advice-list">
             <li class="advice-item">
-              <div class="house">
-                <img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
-              </div>
-              <h3 class="advice">Жилье</h3>
+              <h3 class="advice advice-house">Жилье</h3>
               <p class="advice-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="advice-item">
-              <div class="food">
-                <img src="img/icon-2.svg" width="64" height="76" alt="Еда">
-              </div>
-              <h3 class="advice">Еда</h3>
+              <h3 class="advice advice-food">Еда</h3>
               <p class="advice-text">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </li>
             <li class="advice-item">
-              <div class="souvenirs">
-                <img src="img/icon-3.svg" width="74" height="70" alt="Сувениры">
-              </div>
-              <h3 class="advice">Сувениры</h3>
+              <h3 class="advice advice-souvenirs">Сувениры</h3>
               <p class="advice-text">Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </section>
-        <div class="feature-image feature-left-image">
-          <img src="img/feature-2.jpg" alt="Мост Дьявола" width="800" height="256">
+        <div class="feature-container">
+          <div class="feature-image feature-left-image">
+            <img src="img/feature-2.jpg" alt="Мост Дьявола" width="800" height="256">
+          </div>
+          <div class="feature-item blue-back">
+            <h2 class="feature-header">Там есть<br>Мост Дьявола</h2>
+            <div class="feature-number">&mdash; №2 &mdash;</div>
+            <p class="feature-text">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+          </div>
         </div>
-        <div class="feature-item blue-back">
-          <h2 class="feature-header">Там есть Мост Дьявола</h2>
-          <div class="feature-number">&mdash; №2 &mdash;</div>
-          <p class="feature-text">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
-        </div>
-        <div class="feature-item">
-          <h2 class="feature-header">Небольшая площадь</h2>
-          <div class="feature-number">&mdash; №3 &mdash;</div>
-          <p class="feature-text">Все достопримечательности находятся очень близко</p>
-        </div>
-        <div class="feature-item">
-          <h2 class="feature-header">Красивая дорога</h2>
-          <div class="feature-number">&mdash; №4 &mdash;</div>
-          <p class="feature-text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-        </div>
-        <div class="feature-item">
-          <h2 class="feature-header">Мало туристов</h2>
-          <div class="feature-number">&mdash; №5 &mdash;</div>
-          <p class="feature-text">Большинство едет в Гранд Каньон и толпится там</p>
+        <div class="feature-container">
+          <div class="feature-item gray-back">
+            <h2 class="feature-header">Небольшая площадь</h2>
+            <div class="feature-number">&mdash; №3 &mdash;</div>
+            <p class="feature-text">Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="feature-item gray-back">
+            <h2 class="feature-header">Красивая дорога</h2>
+            <div class="feature-number">&mdash; №4 &mdash;</div>
+            <p class="feature-text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          </div>
+          <div class="feature-item gray-back">
+            <h2 class="feature-header">Мало туристов</h2>
+            <div class="feature-number">&mdash; №5 &mdash;</div>
+            <p class="feature-text">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
         </div>
       </section>
       <section class="appointment">
         <h2 class="appointment-title">Заинтересовались?</h2>
-        <p class="appointment-info">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        <p class="appointment-info">Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        <a class="search-open-button" href="">Поиск гостиницы в Седоне</a>
       </section>
-      <section class="search-form">
+      <section class="search-form-container">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-        <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="search-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
           <div class="search-line">
             <label class="search-label" for="in">Дата заезда:</label>
-            <input class="search-field" type="text" id="in">
-            <button type="button" class="calendar"></button>
+            <div class="calendar-input">
+              <input class="search-field date" type="text" id="in" placeholder="24 апреля 2017">
+              <button type="button" class="calendar"></button>
+            </div>
           </div>
           <div class="search-line">
             <label class="search-label" for="out">Дата выезда:</label>
-            <input class="search-field" type="text" id="out">
-            <button type="button" class="calendar"></button>
+            <div class="calendar-input">
+              <input class="search-field date" type="text" id="out" placeholder="4 июля 2017">
+              <button type="button" class="calendar"></button>
+            </div>
           </div>
           <div class="search-line">
-           <div class="search-column">
-            <label class="search-label" for="adults">Взрослые:</label>
-            <input class="search-field" type="text" id="adults">
-           </div>
+            <div class="search-column">
+              <label class="search-label" for="adults">Взрослые:</label>
+              <input class="search-field" type="text" id="adults">
+            </div>
+            <div class="search-column">
+              <label class="search-label" for="children">Дети:</label>
+              <input class="search-field" type="text" id="children">
+            </div>
           </div>
-          <div class="search-line">
-           <div class="search-column">
-            <label class="search-label" for="children">Дети:</label>
-            <input class="search-field" type="text" id="children">
-           </div>
-          </div>
+          <button class="find-button" type="submit">Найти</button>
         </form>
-        <button class="button" type="submit">Найти</button>
       </section>
       <section class="map-static">
         <h2 class="visually-hidden">Карта Седоны</h2>
         <img src="img/map.jpg" alt="Карта Седоны">
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <div class="footer-contacts">
-        <a class="" href=#>#VisitSedona</a>
+        <a class="invitation" href="#">#VisitSedona</a>
       </div>
       <div class="footer-social">
-        <ul class="social-button">
-          <li><a class="social-button-tw" href="#">Твиттер</a></li>
-          <li><a class="social-button-fb" href="#">Фейсбук</a></li>
-          <li><a class="social-button-yt" href="#">Ютьюб</a></li>
+        <ul>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><image overflow="visible" width="17" height="15" xlink:href="t.png"/><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"></path></svg>
+          </a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"></path></svg>
+          </a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Ютьюб</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><image overflow="visible" width="20" height="16" xlink:href="youtube.png"/><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"></path></svg>
+          </a></li>
         </ul>
       </div>
       <div class="footer-copyright">
-        <span>Website by</span>
-         <a href="https://htmlacademy.ru">
-           <img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="108" height="37">
-         HTML Academy</a>
+        <div class="footer-copyright-inner">
+          <span>Website by</span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
+        </div>
       </div>
     </footer>
+    <script type="text/javascript">
+      var searchOpenButton = document.querySelector('.search-open-button');
+      var searchForm = document.querySelector('.search-form');
+
+      searchOpenButton.addEventListener('click', function (evt) {
+        searchForm.classList.toggle('visually-hidden');
+
+        evt.preventDefault();
+      });
+    </script>
   </body>
 </html>
