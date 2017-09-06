@@ -778,15 +778,15 @@ input[type="checkbox"].visually-hidden {
 }
 
 .rating-stars-4 {
-  width: calc(18px * 4);
+  width: calc(24px * 4);
 }
 
 .rating-stars-3 {
-  width: calc(18px * 3);
+  width: calc(24px * 3);
 }
 
 .rating-stars-2 {
-  width: calc(18px * 2);
+  width: calc(24px * 2);
 }
 
 .hotel-name {
