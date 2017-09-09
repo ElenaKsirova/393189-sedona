@@ -122,7 +122,7 @@ input[type="checkbox"].visually-hidden {
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  z-index: 10;
+  z-index: 1;
 }
 
 .main-title {
@@ -257,7 +257,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .appointment {
-  background-color: #ffffff;
+  background-color: white;
   padding-top: 31px;
   height: 291px;
   box-sizing: border-box;
@@ -280,7 +280,7 @@ input[type="checkbox"].visually-hidden {
   position: relative;
   padding: 0;
   margin: 0 auto;
-  z-index: 10;
+  z-index: 3;
 }
 
 .search-open-button {
@@ -291,7 +291,7 @@ input[type="checkbox"].visually-hidden {
   font-size: 21px;
   line-height: 85px;
   font-weight: bold;
-  color: #ffffff;
+  color: white;
   background-color: #766357;
   text-align: center;
 }
@@ -302,11 +302,11 @@ input[type="checkbox"].visually-hidden {
   top: 0;
   width: 568px;
   margin: 0 auto;
-  padding: 54px 55px 56px 55px;
+  padding: 54px 55px 56px;
   font-weight: bold;
   line-height: 26px;
   text-align: left;
-  background: #ffffff;
+  background: white;
   box-sizing: border-box;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -345,7 +345,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .children-input-container {
-  margin-left: 23px;
+  margin-left: 26px;
 }
 
 .minus-button, .plus-button {
@@ -366,7 +366,7 @@ input[type="checkbox"].visually-hidden {
   height: 3px;
   top: 19px;
   left: 14px;
-  content:"";
+  content: "";
 }
 
 .plus-button::after {
@@ -376,7 +376,7 @@ input[type="checkbox"].visually-hidden {
   height: 11px;
   top: 15px;
   left: 18px;
-  content:"";
+  content: "";
 }
 
 .minus-button:focus, .plus-button:focus {
@@ -404,7 +404,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .search-line input:focus {
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .search-column input {
@@ -425,8 +425,7 @@ input[type="checkbox"].visually-hidden {
   top: 8px;
   width: 22px;
   height: 23px;
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
+  background: url("../img/calendar.svg") no-repeat;
   border: none;
   padding: 0;
   margin: 0;
@@ -446,7 +445,7 @@ input[type="checkbox"].visually-hidden {
 
 .search-field {
   line-height: 26px;
-  padding: 4px 15px 8px;
+  padding: 4px 10px;
   border: none;
   outline: none;
   background-color: #f2f2f2;
@@ -458,33 +457,19 @@ input[type="checkbox"].visually-hidden {
 }
 
 .search-field:focus {
-  background-color: #ffffff;
-}
-
-.search-form .calendar {
-  color: #c2c2c2;
-}
-
-.search-form .calendar:hover {
-  color: #000000;
-}
-
-.search-form .calendar:active {
-  color: #81b3d2;
+  background-color: white;
 }
 
 .find-button {
   display: block;
   width: 458px;
-  margin: 0 auto;
-  margin-top: 52px;
-  padding: 16px 10px 16px;
+  margin: 52px auto 0;
+  padding: 16px 10px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
+  color: white;
   text-transform: uppercase;
   background-color: #81b3d2;
   border: none;
@@ -500,10 +485,6 @@ input[type="checkbox"].visually-hidden {
 .find-button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.inner-page {
-  /*background-color: grey;*/
 }
 
 .search-columns {
@@ -522,8 +503,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .filters {
-  background-image: url("../img/background-photo-filtered.jpg");
-  background-position: 0 -55px;
+  background: url("../img/background-photo-filtered.jpg") 0 -55px no-repeat;
   height: 217px;
   padding: 0 6%;
 }
@@ -559,10 +539,9 @@ input[type="checkbox"].visually-hidden {
 
 .filter legend {
   font-size: 16px;
-  line-height: 21px;
   font-weight: bold;
-  color: #ffffff;
-  margin: 0 0 12px 0px;
+  color: white;
+  margin: 0 0 12px;
   padding: 0;
 }
 
@@ -575,9 +554,9 @@ input[type="checkbox"].visually-hidden {
 }
 
 .filter-option {
-  color: #ffffff;
-  margin-bottom: 24px;
   position: relative;
+  margin-bottom: 24px;
+  color: white;
 }
 
 .filter-input-checkbox + label::before {
@@ -615,13 +594,12 @@ input[type="checkbox"].visually-hidden {
   margin: 0 auto;
   padding: 6px 30px;
 
-  font-size: 14px;
   line-height: 20px;
-  color: #ffffff;
+  color: white;
   text-transform: uppercase;
 
   background: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid white;
   border-radius: 2px;
   cursor: pointer;
 }
@@ -633,29 +611,24 @@ input[type="checkbox"].visually-hidden {
 }
 
 .filter-button:active {
-    outline: none;
+  outline: none;
 }
 
 .filter-range {
   width: 318px;
   margin: 0 auto;
   margin-top: -2px;
-
-  color: #ffffff;
+  color: white;
   text-transform: uppercase;
 }
 
 .price-controls {
   position: relative;
-
   height: 36px;
   margin-bottom: 20px;
-
   font-size: 0;
-
-  border: 2px solid #ffffff;
+  border: 2px solid white;
   border-radius: 2px;
-
   box-sizing: border-box;
 }
 
@@ -668,7 +641,7 @@ input[type="checkbox"].visually-hidden {
   width: 2px;
   height: 22px;
 
-  background: #ffffff;
+  background: white;
   transform: translate(-50%, -50%);
 }
 
@@ -719,7 +692,7 @@ input[type="checkbox"].visually-hidden {
   width: 80%;
   height: 2px;
 
-  background: #ffffff;
+  background: white;
 }
 
 .range-toggle {
@@ -730,7 +703,7 @@ input[type="checkbox"].visually-hidden {
   height: 4px;
 
   background: #ababab;
-  border: 8px solid #ffffff;
+  border: 8px solid white;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
@@ -786,36 +759,46 @@ input[type="checkbox"].visually-hidden {
   margin-right: 10px;
   font-size: 12px;
   line-height: 18px;
-  font-weight: normal;
   color: black;
 }
 
 .hotel-search-sorting {
   font-size: 12px;
   line-height: 18px;
-  font-weight: normal;
   width: 88px;
   color: rgba(0, 0, 0, 0.3);
-  text-decoration-color: #81b3d2;
+
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3) 50%, transparent 50%);
+  background-position: 0 1.2em;
+  background-repeat: repeat-x;
+  background-size: 2px 1px;
 }
 
-.hotel-search-sorting-active,
+.hotel-search-sorting-current {
+  font-size: 12px;
+  line-height: 18px;
+  color: #81b3d2;
+
+  background: none;
+}
+
 .hotel-search-sorting:hover {
   font-size: 12px;
   line-height: 18px;
-  font-weight: normal;
   color: #81b3d2;
-}
 
-.hotel-search-sorting:hover {
- /*  точечки подчеркивания */
+  background-image: linear-gradient(to right, #81b3d2 50%, transparent 50%);
+  background-position: 0 1.2em;
+  background-repeat: repeat-x;
+  background-size: 2px 1px;
 }
 
 .hotel-search-sorting:active {
   font-size: 12px;
   line-height: 18px;
-  font-weight: normal;
   color: black;
+
+  background-image: linear-gradient(to right, black 50%, transparent 50%);
 }
 
 .sorting-direction-buttons {
@@ -826,10 +809,8 @@ input[type="checkbox"].visually-hidden {
   display: block;
   width: 11px;
   height: 10px;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: transparent center center no-repeat;
   border: none;
-  background-color: transparent;
 }
 
 .sorting-direction-ascending {
@@ -841,11 +822,11 @@ input[type="checkbox"].visually-hidden {
   margin-left: 10px;
 }
 
-.sorting-direction-active.sorting-direction-ascending {
+.sorting-direction-current.sorting-direction-ascending {
   background-image: url("../img/icon-up-dir-active.svg");
 }
 
-.sorting-direction-active.sorting-direction-descending {
+.sorting-direction-current.sorting-direction-descending {
   background-image: url("../img/icon-down-dir-active.svg");
 }
 
@@ -900,8 +881,11 @@ input[type="checkbox"].visually-hidden {
 
 .hotel-rating-stars {
   height: 17px;
-  background-image: url("../img/star.svg");
-  background-repeat: repeat-x;
+  background: url("../img/star.svg") repeat-x;
+}
+
+.rating-stars-5 {
+  width: calc(24px * 5 - 6px);
 }
 
 .rating-stars-4 {
@@ -914,6 +898,10 @@ input[type="checkbox"].visually-hidden {
 
 .rating-stars-2 {
   width: calc(24px * 2 - 6px);
+}
+
+.rating-stars-1 {
+  width: calc(24px * 1 - 6px);
 }
 
 .hotel-rating-result {
@@ -971,7 +959,7 @@ input[type="checkbox"].visually-hidden {
   display: block;
   width: 110px;
   height: 27px;
-  color: #ffffff;
+  color: white;
   font-weight: bold;
   background-color: #81b3d2;
   text-align: center;
@@ -993,7 +981,7 @@ input[type="checkbox"].visually-hidden {
   display: block;
   width: 140px;
   height: 27px;
-  color: #ffffff;
+  color: white;
   font-weight: bold;
   background-color: #766357;
   text-align: center;
@@ -1025,11 +1013,31 @@ input[type="checkbox"].visually-hidden {
   text-align: bottom;
 }
 
-.map-cropper {
+.map {
   position: relative;
+  height: 473px;
+}
+
+.map-static {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.map iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.map-cropper {
   width: 100%;
   height: 473px;
-  overflow: hidden;
 }
 
 .map-cropper img {
@@ -1041,14 +1049,17 @@ input[type="checkbox"].visually-hidden {
 .footer {
   margin-top: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
   height: 120px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  z-index: 3;
 }
 
-.footer-contacts, .footer-social, .footer-copyright {
+.footer-contacts,
+.footer-social,
+.footer-copyright {
   width: 33%;
   display: flex;
   justify-content: center;
@@ -1086,7 +1097,6 @@ input[type="checkbox"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 150px;
-  /* margin: 0px auto; не работает в IE11 */
   padding: 0;
   list-style: none;
 }
@@ -1102,13 +1112,12 @@ input[type="checkbox"].visually-hidden {
 
 .social-button:hover path,
 .social-button:focus path {
-  fill: #ffffff;
+  fill: white;
 }
 
 .social-button:active path {
   fill: #88b6d1;
 }
-
 
 .footer-copyright {
   margin: 0;
@@ -1117,10 +1126,10 @@ input[type="checkbox"].visually-hidden {
 }
 
 .footer-copyright-inner {
+  position: relative;
   display: flex;
   align-items: center;
   width: 200px;
-  position: relative;
 }
 
 .footer-copyright span {
@@ -1143,9 +1152,7 @@ input[type="checkbox"].visually-hidden {
   left: 85px;
   width: 108px;
   height: 37px;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background: url("../img/logo-htmlacademy.svg") 0 0 no-repeat;
   transform: scale(1.05);
 }
 
