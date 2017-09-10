@@ -12,7 +12,7 @@
       searchForm.classList.remove('visually-hidden');
       searchForm.classList.add('modal-show');
 
-      setInterval(function () { searchForm.classList.remove('modal-show'); }, 3000);
+      setTimeout(function () { searchForm.classList.remove('modal-show'); }, 1000);
     } else {
       searchForm.classList.add('visually-hidden');
       searchForm.classList.remove('modal-show');
@@ -29,7 +29,7 @@
 
       searchForm.classList.add('modal-error');
 
-      setTimeout(function () { searchForm.classList.remove('modal-error'); }, 3000);
+      setTimeout(function () { searchForm.classList.remove('modal-error'); }, 1000);
     } else {
       searchForm.classList.remove('modal-error');
     }
