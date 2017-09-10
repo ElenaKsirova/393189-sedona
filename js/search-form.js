@@ -7,24 +7,10 @@
   var checkIn = document.querySelector('#check-in');
   var checkOut = document.querySelector('#check-out');
 
-  var checkInStorage = localStorage.getItem('checkInStorage');
-  var checkOutStorage = localStorage.getItem('checkOutStorage');
-
   searchOpenButton.addEventListener('click', function (evt) {
     if (searchForm.classList.contains('visually-hidden')) {
       searchForm.classList.remove('visually-hidden');
       searchForm.classList.add('modal-show');
-
-      if (checkInStorage) {
-        checkIn.value = checkInStorage;
-        checkOut.focus();
-      } else {
-        checkIn.focus();
-      }
-
-      if (checkOutStorage) {
-        checkOut.value = checkOutStorage;
-      }
 
       setInterval(function () { searchForm.classList.remove('modal-show'); }, 1000);
     } else {
@@ -45,9 +31,6 @@
 
       setTimeout(function () { searchForm.classList.remove('modal-error'); }, 1000);
     } else {
-      localStorage.setItem('checkIn', checkIn.value);
-      localStorage.setItem('checkOut', checkOut.value);
-
       searchForm.classList.remove('modal-error');
     }
   });
