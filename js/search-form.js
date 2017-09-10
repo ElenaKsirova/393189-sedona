@@ -2,6 +2,8 @@
 
 (function () {
   var searchOpenButton = document.querySelector('.search-open-button');
+
+  var searchFormWrapper = document.querySelector('.search-form-wrapper-for-animation');
   var searchForm = document.querySelector('.search-form');
 
   var checkIn = document.querySelector('#check-in');
@@ -9,11 +11,13 @@
 
   searchOpenButton.addEventListener('click', function (evt) {
     if (searchForm.classList.contains('visually-hidden')) {
+      searchFormWrapper.classList.remove('visually-hidden');
       searchForm.classList.remove('visually-hidden');
       searchForm.classList.add('modal-show');
 
       setTimeout(function () { searchForm.classList.remove('modal-show'); }, 1000);
     } else {
+      searchFormWrapper.classList.add('visually-hidden');
       searchForm.classList.add('visually-hidden');
       searchForm.classList.remove('modal-show');
       searchForm.classList.remove('modal-error');

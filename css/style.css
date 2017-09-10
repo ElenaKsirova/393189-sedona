@@ -303,11 +303,11 @@ input[type="checkbox"].visually-hidden {
 .search-form-wrapper-for-animation {
   display: block;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: calc(50% - 284px);
+  top: 0px;
   padding: 0;
-  margin: 0;
-  width: 1200px;
+  margin: 0 auto;
+  width: 568px;
   height: 395px;
   overflow-y: hidden;
 }
