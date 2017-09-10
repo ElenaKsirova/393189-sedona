@@ -144,6 +144,10 @@ input[type="checkbox"].visually-hidden {
   font-weight: bold;
 }
 
+.features {
+  z-index: 4;
+}
+
 .feature-container {
   display: flex;
   margin: 0;
@@ -296,10 +300,22 @@ input[type="checkbox"].visually-hidden {
   text-align: center;
 }
 
+.search-form-wrapper-for-animation {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  width: 1200px;
+  height: 395px;
+  overflow-y: hidden;
+}
+
 .search-form {
   position: absolute;
   left: calc(50% - 284px);
-  top: 0;
+  top: 0px;
   width: 568px;
   margin: 0 auto;
   padding: 54px 55px 56px;
@@ -309,6 +325,56 @@ input[type="checkbox"].visually-hidden {
   background: white;
   box-sizing: border-box;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-396px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .search-line {

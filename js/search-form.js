@@ -4,10 +4,52 @@
   var searchOpenButton = document.querySelector('.search-open-button');
   var searchForm = document.querySelector('.search-form');
 
+  var checkIn = document.querySelector('#check-in');
+  var checkOut = document.querySelector('#check-out');
+
+  var checkInStorage = localStorage.getItem('checkInStorage');
+  var checkOutStorage = localStorage.getItem('checkOutStorage');
+
   searchOpenButton.addEventListener('click', function (evt) {
-    searchForm.classList.toggle('visually-hidden');
+    if (searchForm.classList.contains('visually-hidden')) {
+      searchForm.classList.remove('visually-hidden');
+      searchForm.classList.add('modal-show');
+
+      if (checkInStorage) {
+        checkIn.value = checkInStorage;
+        checkOut.focus();
+      } else {
+        checkIn.focus();
+      }
+
+      if (checkOutStorage) {
+        checkOut.value = checkOutStorage;
+      }
+
+      setInterval(function () { searchForm.classList.remove('modal-show'); }, 1000);
+    } else {
+      searchForm.classList.add('visually-hidden');
+      searchForm.classList.remove('modal-show');
+      searchForm.classList.remove('modal-error');
+    }
 
     evt.preventDefault();
+  });
+
+
+  searchForm.addEventListener('submit', function (evt) {
+    if (!checkIn.value || !checkOut.value) {
+      evt.preventDefault();
+
+      searchForm.classList.add('modal-error');
+
+      setTimeout(function () { searchForm.classList.remove('modal-error'); }, 1000);
+    } else {
+      localStorage.setItem('checkIn', checkIn.value);
+      localStorage.setItem('checkOut', checkOut.value);
+
+      searchForm.classList.remove('modal-error');
+    }
   });
 
 
