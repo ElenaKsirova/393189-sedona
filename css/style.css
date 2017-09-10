@@ -561,7 +561,7 @@ input[type="checkbox"].visually-hidden {
 .filter-input-checkbox,
 .filter-input-checkbox:hover,
 .filter-input-checkbox:focus {
-  border: #ffffff;
+  border: white;
 }
 
 .filter-input-checkbox:disabled {
@@ -1141,7 +1141,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .footer-contacts a {
-  color: #000000;
+  color: black;
   text-decoration: none;
 }
 
